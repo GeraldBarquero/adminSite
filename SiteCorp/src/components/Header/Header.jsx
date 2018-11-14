@@ -58,6 +58,7 @@ class Header extends Component {
           }
         }
       }
+      console.log(this.props)
       return null;
     });
     return name;
@@ -67,7 +68,7 @@ class Header extends Component {
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#pablo">{this.getBrand()}</a>
+            <a href={"#"+this.props.location.pathname}>{this.getBrand()}</a>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
         </Navbar.Header>

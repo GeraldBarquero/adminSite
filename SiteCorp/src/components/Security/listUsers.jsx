@@ -25,7 +25,7 @@ const columns = [{title: 'IdUsuario',data: 'Id_user',visible: false,searchable: 
                 {title: 'Nombre',data: 'name'},
                 {title: 'Apellido',data: 'lastName'},
                 {title: 'Usuario',data: 'username'},
-                {title: 'Correo',data: 'email'}, {title: 'Compañía',data: 'companyName'},
+                {title: 'Correo',data: 'email'}, {title: 'Comercio',data: 'companyName'},
                 {title: 'Fecha de Creación',data: 'create_time'},
                 {title: 'Acciones',data: 'actions'}]
 function importAll(r) {
@@ -459,10 +459,10 @@ class ListUsers extends Component{
                         </FormGroup>
                         <FormGroup controlId="companyName">
                             <Col componentClass={ControlLabel} sm={2}>
-                                Compañía:
+                                Comercio:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="text" placeholder="Nombre de la compañía" onChange={this.onChangeInputFormEditUser}  value={this.state.userEditData.companyName}/>
+                                <FormControl type="text" placeholder="Nombre del Comercio" onChange={this.onChangeInputFormEditUser}  value={this.state.userEditData.companyName}/>
                             </Col>
                         </FormGroup>
                         <FormGroup controlId="email">
@@ -539,10 +539,10 @@ class ListUsers extends Component{
                         </FormGroup>
                         <FormGroup controlId="companyName">
                             <Col componentClass={ControlLabel} sm={2}>
-                                Compañía:
+                                Comercio:
                             </Col>
                             <Col sm={10}>
-                                <FormControl type="text" placeholder="Nombre de la compañía" onChange={this.onChangeInputFormUser}/>
+                                <FormControl type="text" placeholder="Nombre del Comercio" onChange={this.onChangeInputFormUser}/>
                             </Col>
                         </FormGroup>
                         <FormGroup controlId="password">
@@ -575,7 +575,7 @@ class ListUsers extends Component{
                             </Col>
                             <Col sm={10}>
                             <Select
-                                placeholder="Single Select"
+                                placeholder="Seleccione un Rol"
                                 name="singleSelect"
                                 value={this.state.roleSelect}
                                 options={this.state.roles}

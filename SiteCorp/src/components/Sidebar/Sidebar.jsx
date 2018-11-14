@@ -77,7 +77,7 @@ class Sidebar extends Component {
           <a
             className="simple-text logo-normal"
           >
-            JGJ
+            Sistema admin
           </a>
         </div>
         <div className="sidebar-wrapper">
