@@ -1,0 +1,26 @@
+
+#dogDiv {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.loader-container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.loader-container svg{
+  position: absolute;
+}
+
+.loader-dog {
+  left:11px;
+  bottom: 11px;
+  width: 186px;
+  height:auto;
+}
+.svg-loader {
+  margin: 100px auto 0;
+  width: 300px;
+}
