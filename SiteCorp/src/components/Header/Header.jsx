@@ -58,7 +58,6 @@ class Header extends Component {
           }
         }
       }
-      console.log(this.props)
       return null;
     });
     return name;

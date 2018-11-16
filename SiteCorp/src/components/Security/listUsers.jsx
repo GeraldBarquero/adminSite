@@ -29,17 +29,17 @@ const columns = [{title: 'IdUsuario',data: 'Id_user',visible: false,searchable: 
                 {title: 'Fecha de Creación',data: 'create_time'},
                 {title: 'Acciones',data: 'actions'}]
 function importAll(r) {
-    var arr = []
-    console.log(r.keys().map((r,i) => {
-        arr.push(r)
-        return r
-    }))
-    console.log(arr.map(e => { return r.resolve(e)}))
+    // var arr = []
+    // console.log(r.keys().map((r,i) => {
+    //     arr.push(r)
+    //     return r
+    // }))
+    // console.log(arr.map(e => { return r.resolve(e)}))
     return r.keys().map(r);
 }
     
 const images = importAll(require.context('assets/img/avatars/', false, /\.(png|jpe?g|svg)$/));
-console.log(images)
+// console.log(images)
 class ListUsers extends Component{
     constructor(props, context) {
         super(props, context);

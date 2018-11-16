@@ -85,28 +85,30 @@ class Sidebar extends Component {
             {this.state.width <= 993 ? <HeaderLinks /> : null}
             {dashboardRoutes.map((prop, key) => {
               if (!prop.redirect){
-                
-                var perm = listPerm.find(function(element) {
-                                                      return element.Cod_Permission === prop.code && element.fk_idRole === rolId;
-                                                    });
-                if(perm){
-                    return (
-                    <li
-                      className={
-                          this.activeRoute(prop.path)
-                      }
-                      key={key}
-                    >
-                      <NavLink
-                        to={prop.path}
-                        className="nav-link"
-                        activeClassName="active"
+                if(listPerm.type !== "-1"){
+                  var perm = listPerm.find(function(element) {
+                                                        return element.Cod_Permission === prop.code && element.fk_idRole === rolId;
+                                                      });
+                  if(perm){
+                      return (
+                      <li
+                        className={
+                            this.activeRoute(prop.path)
+                        }
+                        key={key}
                       >
-                        <i className={prop.icon} />
-                        <p>{prop.name}</p>
-                      </NavLink>
-                    </li>
-                  );
+                        <NavLink
+                          to={prop.path}
+                          className="nav-link"
+                          activeClassName="active"
+                        >
+                          <i className={prop.icon} />
+                          <p>{prop.name}</p>
+                        </NavLink>
+                      </li>
+                    );
+                  }
+                  
                 }
               }
                 

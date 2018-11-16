@@ -43,7 +43,6 @@ class HeaderLinks extends Component {
         this.setState({username: 'no username'})
         self.setState({redirectToLogin: true});
     }
-    console.log(objectToken)
 }
 
   render() {    
