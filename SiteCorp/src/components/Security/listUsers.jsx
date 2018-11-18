@@ -38,7 +38,7 @@ function importAll(r) {
     return r.keys().map(r);
 }
     
-const images = importAll(require.context('assets/img/avatars/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../assets/img/avatars/', false, /\.(png|jpe?g|svg)$/));
 // console.log(images)
 class ListUsers extends Component{
     constructor(props, context) {

@@ -1,7 +1,7 @@
 import LoginPage from '../views/Pages/LoginPage.jsx';
 import RegisterPage from '../views/Pages/RegisterPage.jsx';
 import Dashboard from "../layouts/Dashboard/Dashboard.jsx";
-import LockScreenPage from 'views/Pages/LockScreenPage.jsx';
+import LockScreenPage from '../views/Pages/LockScreenPage.jsx';
 
 var pagesRoutes = [
     { path: "/", name: "Login Page", mini: "LP", component: LoginPage },

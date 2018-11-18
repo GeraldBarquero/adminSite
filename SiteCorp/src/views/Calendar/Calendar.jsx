@@ -10,9 +10,9 @@ import moment from 'moment';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-import Card from 'components/Card/Card.jsx';
+import Card from '../../components/Card/Card.jsx';
 
-import { events } from 'variables/Variables.jsx';
+import { events } from '../../variables/Variables.jsx';
 
 BigCalendar.setLocalizer(
   BigCalendar.momentLocalizer(moment)
